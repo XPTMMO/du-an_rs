@@ -58,22 +58,21 @@ echo "$kbm" > kbm
     echo -e "\e[5;33m-------------MMO365--Uy-Tín-100%-------------\e[0m"
     echo  "---------------------------------------------"
     echo  "KO SPAM: on, off, reboot VPS liên tục"
-    read -p "Nhập số tương ứng với lựa chọn: " so
+ read -p "Nhập số tương ứng với lựa chọn: " so
 
 case $so in
         1)
-                bash <(curl -Ls https://raw.githubusercontent.com/XPTMMO/du-an_rs/refs/heads/main/ho1.sh)  $id $kbm
-                #power_off_droplet $id $kbm
+                bash <(curl -Ls https://raw.githubusercontent.com/XPTMMO/du-an_rs/refs/heads/main/ho1.sh) $id $kbm
                 ;;
         2)
-                bash <(curl -Ls https://raw.githubusercontent.com/XPTMMO/du-an_rs/refs/heads/main/ho2.sh)  $id $kbm
-                #power_on_droplet $id $kbm
+                bash <(curl -Ls https://raw.githubusercontent.com/XPTMMO/du-an_rs/refs/heads/main/ho2.sh) $id $kbm
                 ;;
         3)
-                bash <(curl -Ls https://raw.githubusercontent.com/XPTMMO/du-an_rs/refs/heads/main/hrs.sh)  $id $kbm
-                #reboot_droplet $id $kbm
+                bash <(curl -Ls https://raw.githubusercontent.com/XPTMMO/du-an_rs/refs/heads/main/hrs.sh) $id $kbm
                 ;;
         *)
-                echo "Lua chon khong hop le"
+                echo "Lựa chọn không hợp lệ. Vui lòng thử lại."
                 ;;
 esac
+
+
