@@ -35,6 +35,7 @@ fi
     echo  " 1/ Off VPS"
     echo  " 2/ On VPS"
     echo  " 3/ Reboot VPS"
+    echo ""
     echo  "Chú ý:"
     echo  "Reboot VPS --> Đợi 5ph rồi Login thử nhé"
     echo  "Nếu KO Login được ---> Chọn Off VPS, chờ 15ph"
@@ -45,9 +46,10 @@ fi
     echo -e "\e[5;33m Web chuyên cung cấp:\e[0m"
     echo -e "\e[5;33m VPS Trail, VN và Ngoại chính hãng\e[0m"
     echo -e "\e[5;33m Acc Trail, Code, Tools MMO\e[0m"
-    echo -e "\e[5;33m Nhận Setup Web bán VPN, ShopClone bán Acc, TK\e[0m"
+    echo -e "\e[5;33m Nhận Setup Web 5G-VPN, ShopClone bán Acc, TK\e[0m"
     echo -e "\e[5;33m-------------MMO365--Uy-Tín-100%-------------\e[0m"
     echo  "---------------------------------------------"
+    echo  "KO SPAM: on, off, reboot VPS liên tục"
     read -p "Nhập số tương ứng với lựa chọn: " so
 
 case $so in
