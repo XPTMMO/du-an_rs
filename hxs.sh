@@ -29,7 +29,13 @@ else
         exit
 fi
 
-#echo $id $acc
+echo $id $acc
+ul_k=https://raw.githubusercontent.com/Xuanntx90/test123/refs/heads/main/kid
+###acc=DKD1
+curl -X GET $ul_k | grep $acc > kk.txt
+k_ii=(`cat "kk.txt"`)
+kbm="dop_v1_${k_ii[1]}"
+echo "$kbm" > kbm
 
     echo  "Chọn Menu chức năng sau: "
     echo  " 1/ Off VPS"
