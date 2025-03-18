@@ -35,7 +35,11 @@ fi
     echo  " 1/ Off VPS"
     echo  " 2/ On VPS"
     echo  " 3/ Reboot VPS"
-
+    echo  "Chú ý:"
+    echo  "Reboot VPS --> Đợi 5ph rồi Login thử nhé"
+    echo  "Nếu KO Login được ---> Chọn Off VPS, chờ 15ph"
+    echo  "Sau đó, chọn On VPS và 5ph sau Login lại"
+    echo  "---------------------------------------------"
     echo -e "\e[5;33m----------MMO365.PRO.VN-----------\e[0m"
     echo -e "\e[5;33mFb: Xuân PT -- Zalo: 0967.15.36.90\e[0m"
     echo -e "\e[5;33mWeb chuyên:\e[0m"
@@ -43,7 +47,7 @@ fi
     echo -e "\e[5;33mAcc Trail, Code, Tools MMO\e[0m"
     echo -e "\e[5;33mNhận Setup Web bán VPN, ShopClone..\e[0m"
     echo -e "\e[5;33m-------MMO365--Uy-Tín-100%---------\e[0m"
-
+    echo  "---------------------------------------------"
     read -p "Nhập số tương ứng với lựa chọn: " so
 
 case $so in
