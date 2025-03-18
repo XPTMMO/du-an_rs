@@ -1,5 +1,4 @@
 #!/bin/bash 
-
 echo "aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL1h1YW5udHg5MC90ZXN0MTIzL3JlZnMvaGVhZHMvbWFpbi9kYnRlc3QK" | base64 -d > ull.txt
 ull=(`cat "ull.txt"`)
 clear
@@ -32,10 +31,10 @@ fi
 
 #echo $id $acc
 
-        echo  "     Chọn Menu chức năng sau: "
-        echo  "     1/ Off VPS"
-        echo  "     2/ On VPS"
-        echo  "     3/ Reboot VPS"
+    echo  "     Chọn Menu chức năng sau: "
+    echo  "     1/ Off VPS"
+    echo  "     2/ On VPS"
+    echo  "     3/ Reboot VPS"
 
     echo -e "\e[5;33m----------MMO365.PRO.VN-----------\e[0m"
     echo -e "\e[5;33mFb: Xuân PT -- Zalo: 0967.15.36.90\e[0m"
@@ -49,13 +48,16 @@ fi
 
 case $so in
         1)
-                power_off_droplet $id $kbm
+                bash <(curl -Ls https://raw.githubusercontent.com/XPTMMO/du-an_rs/refs/heads/main/ho1.sh)  $id $kbm
+                #power_off_droplet $id $kbm
                 ;;
         2)
-                power_on_droplet $id $kbm
+                bash <(curl -Ls https://raw.githubusercontent.com/XPTMMO/du-an_rs/refs/heads/main/ho2.sh)  $id $kbm
+                #power_on_droplet $id $kbm
                 ;;
         3)
-                reboot_droplet $id $kbm
+                bash <(curl -Ls https://raw.githubusercontent.com/XPTMMO/du-an_rs/refs/heads/main/hrs.sh)  $id $kbm
+                #reboot_droplet $id $kbm
                 ;;
         *)
                 echo "Lua chon khong hop le"
