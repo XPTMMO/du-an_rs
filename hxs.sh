@@ -24,6 +24,8 @@ ipvip=(`cat "vip.txt"`)
 #KTra dsach
 if [[ " ${lines[@]} " =~ " $ipv4 " ]]; then
         echo "IPV4 vừa nhập là: $ipv4"
+        id=${ipvip[1]}
+	acc=${ipvip[2]}
 else
         echo "IPV4 Không tồn tại "
         exit
