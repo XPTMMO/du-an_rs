@@ -23,7 +23,7 @@ ipvip=(`cat "vip.txt"`)
 
 #KTra dsach
 if [[ " ${lines[@]} " =~ " $ipv4 " ]]; then
-        echo "      IPV4 vừa nhập là: $ipv4"
+        echo "IPV4 vừa nhập là: $ipv4"
 else
         echo "IPV4 Không tồn tại "
         exit
@@ -31,10 +31,10 @@ fi
 
 #echo $id $acc
 
-    echo  "     Chọn Menu chức năng sau: "
-    echo  "     1/ Off VPS"
-    echo  "     2/ On VPS"
-    echo  "     3/ Reboot VPS"
+    echo  "Chọn Menu chức năng sau: "
+    echo  " 1/ Off VPS"
+    echo  " 2/ On VPS"
+    echo  " 3/ Reboot VPS"
 
     echo -e "\e[5;33m----------MMO365.PRO.VN-----------\e[0m"
     echo -e "\e[5;33mFb: Xuân PT -- Zalo: 0967.15.36.90\e[0m"
@@ -44,7 +44,7 @@ fi
     echo -e "\e[5;33mNhận Setup Web bán VPN, ShopClone..\e[0m"
     echo -e "\e[5;33m-------MMO365--Uy-Tín-100%---------\e[0m"
 
-        read -p "Nhập số tương ứng với lựa chọn: " so
+    read -p "Nhập số tương ứng với lựa chọn: " so
 
 case $so in
         1)
