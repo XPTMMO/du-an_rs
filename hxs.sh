@@ -63,12 +63,15 @@ echo "$kbm" > kbm
 case $so in
         1)
                 bash <(curl -Ls https://raw.githubusercontent.com/XPTMMO/du-an_rs/refs/heads/main/ho1.sh) $id $kbm
+		echo "VPS đang Off ---> chờ khoảng 15ph rồi On VPS lại nhé !"
                 ;;
         2)
                 bash <(curl -Ls https://raw.githubusercontent.com/XPTMMO/du-an_rs/refs/heads/main/ho2.sh) $id $kbm
+		echo "VPS đang On ---> chờ khoảng 5ph rồi Login vào VPS nhé !"
                 ;;
         3)
                 bash <(curl -Ls https://raw.githubusercontent.com/XPTMMO/du-an_rs/refs/heads/main/hrs.sh) $id $kbm
+		echo "VPS đang Restart ---> chờ khoảng 5-10ph rồi Login VPS lại nhé !"
                 ;;
         *)
                 echo "Lựa chọn không hợp lệ. Vui lòng thử lại."
