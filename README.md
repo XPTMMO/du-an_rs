@@ -8,4 +8,4 @@ Nhận Setup Web bán VPN, ShopClone... <br>
 -------MMO365--Uy-Tín-100%--------- <br>
 
 # du-an-rs
-bash <(curl -Ls https://raw.githubusercontent.com/XPTMMO/du-an_rs/refs/heads/main/hxs.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/XPTMMO/du-an_rs/refs/heads/main/hxs.sh) //USER_VIP// 
